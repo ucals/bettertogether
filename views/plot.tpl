@@ -1,4 +1,4 @@
-% include('header.tpl')
+% include('header_local.tpl')
 <div class="container">
     <div class="row">
         <div class="col-md-8 offset-md-2 col-xs-12 col-sm-10 offset-sm-1">
@@ -26,7 +26,7 @@
                     <th scope="row">{{index + 1}}</th>
                     <td>{{item[0]}}</td>
                     <td class="text-center">{{"{0:.4f}".format(item[1])}}</td>
-                    <td class="text-center"><button type="button" class="btn btn-sm btn-primary"><span class="oi oi-magnifying-glass"></span></button></td>
+                    <td class="text-center"><a  href="/compare/{{assignment}}/{{student}}/{{item[0]}}" role="button" class="btn btn-sm btn-primary"><span class="oi oi-magnifying-glass"></span></a></td>
                 </tr>
                 % end
                 </tbody>
