@@ -40,7 +40,7 @@
             <br/>
             <p class="lead text-center">
                 <a role="button" class="btn btn-outline-primary btn-lg" href="/inputs">Start over!</a>
-                <a role="button" class="btn btn-outline-primary btn-lg" href="/https://github.com/ucals/bettertogether/blob/master/tutorial.ipynb">Tutorial</a>
+                <a role="button" class="btn btn-outline-primary btn-lg" href="https://github.com/ucals/bettertogether/blob/master/tutorial.ipynb" target="_blank" rel="noopener noreferrer">Tutorial</a>
                 <a role="button" class="btn btn-outline-primary btn-lg" href="mailto:souza@gatech.edu">Feedback</a>
             </p>
             <p class="text-center">Created by <a href="mailto:souza@gatech.edu">Carlos Souza</a><p>
