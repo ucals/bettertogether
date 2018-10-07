@@ -35,5 +35,5 @@ class TestPreProcess(object):
         edtech_course = initialize_canvas(26123)
         origin = "Class Assignment Library"
         destination = path
-        download_from_canvas(origin, destination, edtech_course, log=False)
+        download_from_canvas(origin, destination, edtech_course)
         assert len(os.listdir(path)) > 100

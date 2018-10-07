@@ -7,7 +7,7 @@ def initialize_canvas(course_id):
     return Canvas("https://gatech.instructure.com", api_key).get_course(course_id)
 
 
-def download_from_canvas(origin, destination, canvas_course, log):
+def download_from_canvas(origin, destination, canvas_course):
     folders = canvas_course.get_folders()
     for folder in folders:
         if origin in str(folder):

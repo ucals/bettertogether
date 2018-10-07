@@ -3,14 +3,14 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <div class="col-md-8 offset-md-2 col-xs-12 col-sm-10 offset-sm-1">
             <h1 class="text-center">#bettertogether</h1>
             <br/>
             <p class="lead text-center">Select <strong>your name</strong> in the dropdown below:</p>
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <div class="col-md-8 offset-md-2 col-xs-12 col-sm-10 offset-sm-1">
             <p class="text-center">
                 <select class="selectpicker increased" data-show-subtext="true" data-live-search="true" name="student">
                 % for student in students:
@@ -22,7 +22,7 @@
     </div>
     <br/>
     <div class="row">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+        <div class="col-md-8 offset-md-2 col-xs-12 col-sm-10 offset-sm-1 text-center">
             <p class="lead">Also select <strong>which assignment</strong> you want the NLP analysis to be based in:</p>
             <div class="radio">
                 <label class="increased_radio">
@@ -46,7 +46,7 @@
     </div>
     <br/>
     <div class="row">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <div class="col-md-8 offset-md-2 col-xs-12 col-sm-10 offset-sm-1">
             <p class="lead text-center"><input class="btn btn-primary btn-lg" type="submit" value="Find me similar students!"></p>
             <p class="text-center">Created by <a href="mailto:souza@gatech.edu">Carlos Souza</a><p>
         </div>

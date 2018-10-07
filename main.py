@@ -25,13 +25,13 @@ def formhandler():
     student = request.forms.get('student')
     assignment = request.forms.get('assignment')
     similar_docs = get_similar_docs(student, assignment)
-    message = "Student: " + student + "; Assignment " + assignment + "."
-    return message
+    info = {'student': student, 'assignment': assignment, 'similar_docs': similar_docs}
+    return template('plot', info)
 
 
-@route('/static/<filename>')
-def server_static(filename):
-    return static_file(filename, root='static')
+@route('/static/<filepath:path>')
+def server_static(filepath):
+    return static_file(filepath, root='static')
 
 
 if __name__ == '__main__':
