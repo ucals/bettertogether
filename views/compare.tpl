@@ -1,4 +1,4 @@
-% include('header_local.tpl')
+% include('header.tpl')
 
 <div class="container">
     <div class="row">

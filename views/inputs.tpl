@@ -1,4 +1,4 @@
-% include('header_local.tpl')
+% include('header.tpl')
 <form method="POST" action="/plot">
 
 <div class="container">
