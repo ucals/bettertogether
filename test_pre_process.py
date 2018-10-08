@@ -2,9 +2,12 @@ from pre_process import *
 import os
 import shutil
 import pytest
+import configparser
 
 
-download_all_assignments = False  # Change to True only to download all files (long process)
+config = configparser.ConfigParser()
+config.read(os.path.join(os.getcwd(), 'pytest.ini'))
+download_all_assignments = (config['pre_process']['download_all_assignments'] == 'True')
 
 
 class TestPreProcess(object):

@@ -1,12 +1,13 @@
 from api import *
 import pytest
 import shutil
+import configparser
 
 
-# TODO put these flags in pytest.ini
-# Look here: https://docs.python.org/3/library/configparser.html
-download_all_top_entities = True  # Change to True only to download all files (long process)
-remove_textrazor_cache = False
+config = configparser.ConfigParser()
+config.read(os.path.join(os.getcwd(), 'pytest.ini'))
+download_all_top_entities = (config['api']['download_all_top_entities'] == 'True')
+remove_textrazor_cache = (config['api']['download_all_top_entities'] == 'remove_textrazor_cache')
 
 
 class TestApi(object):
