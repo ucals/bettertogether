@@ -42,6 +42,11 @@ def user_api(assignment, student_1, student_2):
     return template('compare', info)
 
 
+@route('/motivation')
+def welcome():
+    return template('motivation', title=title)
+
+
 @route('/static/<filepath:path>')
 def server_static(filepath):
     return static_file(filepath, root='static')

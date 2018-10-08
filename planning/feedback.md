@@ -36,7 +36,7 @@ Thanks for using *BetterTogether app*! The purpose of this 5' feedback form is t
 
 - **\[If you are working ALONE\]** Do you believe that, by using this app, you could have been working in a team?
     - Yes! I would use it to navigate the class and look for people with same interests
-    - Yes! I would use it to check with people approaching me are in tune with my interests
+    - Yes! I would use it to check whether people approaching me are in tune with my interests
     - No
     
     
