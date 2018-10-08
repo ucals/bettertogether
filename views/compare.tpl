@@ -62,7 +62,7 @@
     </div>
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-            <p class="lead text-center">This uses <a href="https://www.textrazor.com/">TextRazor</a>'s API. Check <a href="#">the tutorial</a> to see how to it is used.</p>
+            <p class="lead text-center">This uses <a href="https://www.textrazor.com/" target="_blank" rel="noopener noreferrer">TextRazor</a>'s API. Check the tutorial to see how to it is used.</p>
             <br/>
             <p class="lead text-center">
                 <a role="button" class="btn btn-outline-primary btn-lg" href="javascript:history.back()">Go Back!</a>
