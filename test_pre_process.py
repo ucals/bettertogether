@@ -15,7 +15,7 @@ class TestPreProcess(object):
         edtech_course = initialize_canvas(26123)
         assert edtech_course.name == 'CS6460: Educational Technology'
 
-    @pytest.mark.skip(reason="just saving time")
+    # @pytest.mark.skip(reason="just saving time")
     def test_download_from_canvas(self):
         path = os.path.join(os.getcwd(), '.pytest_cache', 'pdfs')
         if os.path.exists(path):
