@@ -26,6 +26,11 @@ def load_model(assignment):
 
 
 def get_similar_docs(student, assignment, model=None):
+    path_pdfs = os.path.join(os.getcwd(), "pdfs")
+    path_pdf_file = os.path.join(path_pdfs, student + " - Assignment " + str(assignment) + ".pdf")
+    if not os.path.isfile(path_pdf_file):
+        return []
+
     if model is None:
         model = load_model(assignment)
 

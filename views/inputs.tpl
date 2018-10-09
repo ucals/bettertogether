@@ -48,7 +48,7 @@
     <div class="row">
         <div class="col-md-8 offset-md-2 col-xs-12 col-sm-10 offset-sm-1">
             <p class="lead text-center"><input class="btn btn-primary btn-lg" type="submit" value="Find me similar students!"></p>
-            <p class="text-center">Created by <a href="mailto:souza@gatech.edu">Carlos Souza</a><p>
+            % include('credit.tpl')
         </div>
     </div>
 </div>

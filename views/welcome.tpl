@@ -6,9 +6,9 @@
             <br/>
             <p class="lead text-center">This app uses Machine Learning NLP/topic modeling/document similarity techniques to group OMSCS CS-6460 Fall 2018 students by interests based on their essays/writing assignments.<p>
             <p class="lead text-center">With few clicks you will see a ranking of who's work is most similar of yours.<p>
-            <p class="lead text-center">The objective is help you find people who have similar interests and are working in the same topics you are, to facilitate team formation. After all, <strong>learning is better togehter</strong>. Have fun!<p>
+            <p class="lead text-center">The objective is to help you find people with similar interests who are working in the same topics you are, to facilitate team formation and collaboration. After all, <strong>learning is better togehter</strong>. Have fun!<p>
             <p class="lead text-center"><a role="button" class="btn btn-primary btn-lg" href="/inputs">Let's get started!</a></p>
-            <p class="text-center">Created by <a href="mailto:souza@gatech.edu">Carlos Souza</a><p>
+            % include('credit.tpl')
         </div>
     </div>
 </div>

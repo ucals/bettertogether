@@ -4,7 +4,7 @@
         <div class="col-md-8 offset-md-2 col-xs-12 col-sm-10 offset-sm-1">
             <h1 class="text-center">#bettertogether</h1>
             <br/>
-            <p class="lead text-center"><strong>{{student}}</strong>, based on <strong>Assignment {{assignment}}</strong>, these are the <strong>top 10</strong> similar students:</p>
+            <p class="lead text-center"><strong>{{student.split(' ')[0]}}</strong>, based on <strong>Assignment {{assignment}}</strong>, these are the <strong>top 10</strong> similar students:</p>
         </div>
     </div>
 
@@ -44,7 +44,7 @@
                 <a role="button" class="btn btn-outline-primary btn-lg" href="https://github.com/ucals/bettertogether/blob/master/tutorial.ipynb" target="_blank" rel="noopener noreferrer">Tutorial</a>
                 <a role="button" class="btn btn-outline-primary btn-lg" href="https://goo.gl/forms/alQDVr3lmOUwvouE2" target="_blank" rel="noopener noreferrer">Feedback</a>
             </p>
-            <p class="text-center">Created by <a href="mailto:souza@gatech.edu">Carlos Souza</a><p>
+            % include('credit.tpl')
         </div>
     </div>
 </div>

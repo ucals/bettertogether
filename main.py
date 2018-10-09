@@ -1,5 +1,5 @@
 from bottle import route, run, template, get, post, request
-from bottle import static_file
+from bottle import static_file, redirect
 from api import get_students, get_similar_docs, initialize_textrazor, get_top_entities
 import logging
 import sys
@@ -26,8 +26,11 @@ def formhandler():
     student = request.forms.get('student')
     assignment = request.forms.get('assignment')
     similar_docs = get_similar_docs(student, assignment)
-    info = {'student': student, 'assignment': assignment, 'similar_docs': similar_docs}
-    return template('plot', info)
+    if len(similar_docs) == 0:
+        redirect("/error/" + str(assignment) + '/' + student)
+    else:
+        info = {'student': student, 'assignment': assignment, 'similar_docs': similar_docs}
+        return template('plot', info)
 
 
 @route('/compare/<assignment>/<student_1>/<student_2>')
@@ -45,6 +48,12 @@ def user_api(assignment, student_1, student_2):
 @route('/motivation')
 def welcome():
     return template('motivation', title=title)
+
+
+@route('/error/<assignment>/<student>')
+def welcome(assignment, student):
+    info = {'assignment': assignment, 'student': student}
+    return template('error', info)
 
 
 @route('/static/<filepath:path>')
