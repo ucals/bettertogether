@@ -54,16 +54,28 @@
                         % end
                         </tbody>
                     </table>
-
                 </div>
             </div>
         </div>
-
     </div>
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-            <p class="lead text-center">This uses <a href="https://www.textrazor.com/" target="_blank" rel="noopener noreferrer">TextRazor</a>'s API. Check the tutorial to see how to it is used.</p>
-            <br/>
+            <p class="text-center"><small>This uses <a href="https://www.textrazor.com/" target="_blank" rel="noopener noreferrer">TextRazor</a>'s API. Check the tutorial to see how to it is used.</small></p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+            <div class="row">
+                <div class="col-6">
+                    <p class="text-center"><a class="btn btn-primary btn-sm" href="{{file_1}}" role="button" target="_blank" rel="noopener noreferrer">See {{student_1.split(' ')[0]}}'s assignment</a></p>
+                </div>
+                <div class="col-6">
+                    <p class="text-center"><a class="btn btn-primary btn-sm" href="{{file_2}}" role="button" target="_blank" rel="noopener noreferrer">See {{student_2.split(' ')[0]}}'s assignment</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
             <p class="lead text-center">
                 <a role="button" class="btn btn-outline-primary btn-lg" href="javascript:history.back()">Go Back!</a>
                 <a role="button" class="btn btn-outline-primary btn-lg" href="/motivation">Motivation</a>

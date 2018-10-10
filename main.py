@@ -40,18 +40,20 @@ def user_api(assignment, student_1, student_2):
     info = {'assignment': assignment,
             'student_1': student_1,
             'entities_1': entities_1,
+            'file_1': '/pdfs/' + student_1 + ' - Assignment ' + assignment + '.pdf',
             'student_2': student_2,
-            'entities_2': entities_2}
+            'entities_2': entities_2,
+            'file_2': '/pdfs/' + student_2 + ' - Assignment ' + assignment + '.pdf'}
     return template('compare', info)
 
 
 @route('/motivation')
-def welcome():
+def motivation():
     return template('motivation', title=title)
 
 
 @route('/error/<assignment>/<student>')
-def welcome(assignment, student):
+def error(assignment, student):
     info = {'assignment': assignment, 'student': student}
     return template('error', info)
 
@@ -59,6 +61,11 @@ def welcome(assignment, student):
 @route('/static/<filepath:path>')
 def server_static(filepath):
     return static_file(filepath, root='static')
+
+
+@route('/pdfs/<path>')
+def server_static(path):
+    return static_file(path, root='pdfs')
 
 
 if __name__ == '__main__':

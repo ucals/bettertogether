@@ -39,7 +39,7 @@
             <p class="lead text-center"><strong>Click on the  <span class="oi oi-magnifying-glass"></span>  button</strong> to see a comparison analysis of main topics.</p>
             <br/>
             <p class="lead text-center">
-                <a role="button" class="btn btn-outline-primary btn-lg" href="/inputs">Start over!</a>
+                <a role="button" class="btn btn-outline-primary btn-lg" href="javascript:history.back()">Go Back!</a>
                 <a role="button" class="btn btn-outline-primary btn-lg" href="/motivation">Motivation</a>
                 <a role="button" class="btn btn-outline-primary btn-lg" href="https://github.com/ucals/bettertogether/blob/master/tutorial.ipynb" target="_blank" rel="noopener noreferrer">Tutorial</a>
                 <a role="button" class="btn btn-outline-primary btn-lg" href="https://goo.gl/forms/alQDVr3lmOUwvouE2" target="_blank" rel="noopener noreferrer">Feedback</a>
