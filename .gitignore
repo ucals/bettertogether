@@ -4,3 +4,4 @@ pdfs
 __pycache__/
 .DS_Store
 .ipynb_checkpoints/
+docs/screenshots.sketch
