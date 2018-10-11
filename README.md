@@ -29,15 +29,18 @@ cd bettertogether
 pip install -r requirements.txt
 ```
 
-### Downloading corpora
+### Downloading corpora and preparing to use TextRazor
 
 To run it properly you will have to download all PDFs with students' assignments. To do it, go to [Canvas](https://gatech.instructure.com/), click on `Account -> Settings`, scroll to the bottom of the page, and click `+ New Access Token`. Copy the new token.
 
+You will also have to get a [TextRazor free API Key](https://www.textrazor.com/signup). After creating a free accoung, you will be redirected to a success page containing your API Key. Copy that as well.
+
 Edit your `~/.bash_profile` and add the following line:
 ```
-export CANVAS_API_KEY="your new token"
+export CANVAS_API_KEY="your new Canvas token"
+export TEXTRAZOR_API_KEY="your new TextRazor API key"
 ```
-Replace `your new token` by the token you got from Canvas. Reload your profile by running `source ~/.bash_profile` from terminal.
+Replace `your new Canvas token` by the token you got from Canvas, and `your new TextRazor API key` by the API Key you got from TextRazor . Reload your profile by running `source ~/.bash_profile` from terminal.
 
 Edit `pytest.ini` and set `download_all_assignments = True`. Now, to download all PDFs, just run:
 ```
