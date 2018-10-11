@@ -92,6 +92,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ## Acknowledgement
 
-- [Quoc Le](QVL@GOOGLE.COM) & [Tomas Mikolov](TMIKOLOV@GOOGLE.COM), thanks for this [fantastic article](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)!
+- [Quoc Le](mailto:QVL@GOOGLE.COM) & [Tomas Mikolov](mailto:TMIKOLOV@GOOGLE.COM), thanks for this [fantastic article](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)!
 - [RaRe Technologies](https://rare-technologies.com/), thanks for this [great tutorial](https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/doc2vec-lee.ipynb)!
 - [Skipgram](https://github.com/skipgram), thanks for this [amazing tutorial](https://github.com/skipgram/modern-nlp-in-python/blob/master/executable/Modern_NLP_in_Python.ipynb)!
