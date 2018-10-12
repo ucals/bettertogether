@@ -5,7 +5,7 @@ textrazor
 
 # To install Textract
 # Ubuntu:
-#   apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig
+#   apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libasound2-dev libpulse-dev
 # Mac:
 #   brew cask install xquartz
 #   brew install poppler antiword unrtf tesseract swig

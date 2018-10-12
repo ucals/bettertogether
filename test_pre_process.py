@@ -8,6 +8,7 @@ import configparser
 config = configparser.ConfigParser()
 config.read(os.path.join(os.getcwd(), 'pytest.ini'))
 download_all_assignments = (config['pre_process']['download_all_assignments'] == 'True')
+is_travis = 'TRAVIS' in os.environ
 
 
 class TestPreProcess(object):
@@ -29,7 +30,8 @@ class TestPreProcess(object):
         download_from_canvas(origin, destination, edtech_course)
         assert len(os.listdir(path)) > 0
 
-    @pytest.mark.skipif(not download_all_assignments, reason="only to download all files (long process)")
+    @pytest.mark.skipif((not download_all_assignments) and (not is_travis),
+                        reason="only to download all files (long process)")
     def test_download_all_assignments(self):
         path = os.path.join(os.getcwd(), 'pdfs')
         if not os.path.exists(path):
