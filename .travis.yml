@@ -15,6 +15,7 @@ install:
 script:
   - pytest -k "TestPreProcess"
   - pytest -k "TestApi"
+before_deploy:
   - zip -r latest *
   - mkdir -p dpl_cd_upload
   - mv latest.zip dpl_cd_upload/latest.zip
@@ -28,3 +29,17 @@ deploy:
       repo: ucals/bettertogether
     bucket: bettertogether-deployment
     region: sa-east-1
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: bettertogether-deployment
+    key: latest.zip
+    bundle_type: zip
+    application: BetterTogether
+    deployment_group: BetterTogetherDeployGroup
+    region: sa-east-1
+    on: *2
+
+
+# Check the following tutorial to understand deployment:
+# https://medium.com/@itsdavidthai/comprehensive-aws-ec2-deployment-with-travisci-guide-7cafa9c754fc
