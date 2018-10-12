@@ -1,12 +1,14 @@
 language: python
 python:
-#  - 3.6
+  - 3.6
 # Enable 3.7 without globally enabling sudo and dist: xenial for other build jobs
-matrix:
-  include:
-    - python: 3.7
-      dist: xenial
-      sudo: true
+#matrix:
+#  include:
+#    - python: 3.7
+#      dist: xenial
+#      sudo: true
+before_install:
+  - sudo rm -f /etc/boto.cfg
 install:
   - sudo apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libasound2-dev
   - sudo apt-get install -y python python-dev python-pip build-essential swig git libpulse-dev
