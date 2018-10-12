@@ -11,6 +11,7 @@ textrazor
 #   brew install poppler antiword unrtf tesseract swig
 # more at: https://textract.readthedocs.io/en/stable/installation.html
 # for issues in installing in Ubuntu, check https://github.com/deanmalmgren/textract/issues/209
+pocketsphinx
 textract
 
 jsonpickle
