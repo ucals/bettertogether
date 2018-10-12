@@ -1,4 +1,5 @@
 # bettertogether
+[![Build Status](https://travis-ci.org/ucals/bettertogether.svg?branch=master)](https://travis-ci.org/ucals/bettertogether)
 
 This app uses Machine Learning NLP/topic modeling/document similarity techniques to group OMSCS CS-6460 Fall 2018 students by interests based on their essays/writing assignments.
 
