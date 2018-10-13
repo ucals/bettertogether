@@ -29,16 +29,16 @@ deploy:
       repo: ucals/bettertogether
     bucket: bettertogether-deployment
     region: sa-east-1
-  - provider: codedeploy
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: bettertogether-deployment
-    key: latest.zip
-    bundle_type: zip
-    application: BetterTogether
-    deployment_group: BetterTogetherDeployGroup
-    region: sa-east-1
-    on: *2
+#  - provider: codedeploy
+#    access_key_id: $AWS_ACCESS_KEY
+#    secret_access_key: $AWS_SECRET_KEY
+#    bucket: bettertogether-deployment
+#    key: latest.zip
+#    bundle_type: zip
+#    application: BetterTogether
+#    deployment_group: BetterTogetherDeployGroup
+#    region: sa-east-1
+#    on: *2
 
 
 # Check the following tutorial to understand deployment:
