@@ -42,3 +42,7 @@ class TestPreProcess(object):
         destination = path
         download_from_canvas(origin, destination, edtech_course)
         assert len(os.listdir(path)) > 100
+
+    def test_train_model(self):
+        model = train_model(2)
+        assert type(model) is gensim.models.doc2vec.Doc2Vec

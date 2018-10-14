@@ -1,5 +1,6 @@
 import os
 from canvasapi import Canvas
+import gensim
 
 
 def initialize_canvas(course_id):
@@ -16,4 +17,7 @@ def download_from_canvas(origin, destination, canvas_course):
                 if not os.path.isfile(os.path.join(destination, str(file))):
                     file.download(os.path.join(destination, str(file)))
 
+
+def train_model(assignment):
+    return None
 
