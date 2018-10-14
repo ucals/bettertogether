@@ -3,6 +3,7 @@ import os
 import shutil
 import pytest
 import configparser
+import logging
 
 
 config = configparser.ConfigParser()
