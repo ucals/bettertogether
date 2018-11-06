@@ -26,6 +26,12 @@
             <p class="lead">Also select <strong>which assignment</strong> you want the NLP analysis to be based in:</p>
             <div class="radio">
                 <label class="increased_radio">
+                    <input type="radio" name="assignment" id="optionsRadios0" value="1">
+                    Assignment 1: Exploring CS6460
+                </label>
+            </div>
+            <div class="radio">
+                <label class="increased_radio">
                     <input type="radio" name="assignment" id="optionsRadios1" value="2">
                     Assignment 2: Exploring Educational Technology
                 </label>
@@ -40,6 +46,12 @@
                 <label class="increased_radio">
                     <input type="radio" name="assignment" id="optionsRadios3" value="4">
                     Assignment 4: Exploring Your Problem
+                </label>
+            </div>
+            <div class="radio">
+                <label class="increased_radio">
+                    <input type="radio" name="assignment" id="optionsRadios4" value="5">
+                    Assignment 5: Collecting Your Sources
                 </label>
             </div>
         </div>

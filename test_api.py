@@ -7,7 +7,7 @@ import configparser
 config = configparser.ConfigParser()
 config.read(os.path.join(os.getcwd(), 'pytest.ini'))
 download_all_top_entities = (config['api']['download_all_top_entities'] == 'True')
-remove_textrazor_cache = (config['api']['download_all_top_entities'] == 'remove_textrazor_cache')
+remove_textrazor_cache = (config['api']['remove_textrazor_cache'] == 'True')
 
 
 class TestApi(object):
@@ -20,13 +20,13 @@ class TestApi(object):
     # @pytest.mark.skip(reason="just saving time")
     def test_models_exist(self):
         model_path = os.path.join(os.getcwd(), 'models')
-        for assignment in range(2, 6):
+        for assignment in range(1, 6):
             model_file = os.path.join(model_path, 'doc2vec_model_assignment_' + str(assignment))
             assert os.path.isfile(model_file)
 
     # @pytest.mark.skip(reason="just saving time")
     def test_load_models(self):
-        for assignment in range(2, 6):
+        for assignment in range(1, 6):
             model = load_model(assignment)
             assert type(model) is gensim.models.doc2vec.Doc2Vec
 
@@ -56,7 +56,7 @@ class TestApi(object):
                 shutil.rmtree(path)
 
         for student in get_students():
-            for assignment in [2, 3, 4]:
+            for assignment in [1, 2, 3, 4, 5]:
                 get_top_entities(student, assignment, force_api=remove_textrazor_cache)
 
         assert len(os.listdir(path)) > 100
